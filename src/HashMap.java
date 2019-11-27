@@ -1,4 +1,7 @@
-public class HashMap {
+import javax.xml.crypto.Data;
+import java.security.Key;
+
+public class HashMap implements Table{
     private Node[] table;
     public HashMap(int size){
         table = new Node[size];
@@ -8,9 +11,25 @@ public class HashMap {
     }
     public void insert(int key){
     }
-    public boolean search(int key){
-    }
-    public void delete(int key){
+
+
+    @Override
+    public void store(Key key, Data value) {
+
     }
 
+    @Override
+    public boolean search(Key key) {
+        return false;
+    }
+
+    @Override
+    public int getValue(Key key) {
+        return 0;
+    }
+
+    @Override
+    public void delete(Key key) {
+
+    }
 }
